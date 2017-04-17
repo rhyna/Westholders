@@ -1,0 +1,66 @@
+.footer-backgr {
+  background: #F2F2F2;
+  padding-bottom: 30px;
+}
+.copyright {
+  text-align: left;
+  padding-top: 45px;
+}
+@media (max-width: 991px) {
+  .copyright {
+    text-align: center;
+  }
+}
+.footer-navbar {
+  margin-top: 45px;
+}
+@media (max-width: 991px) {
+  .footer-navbar {
+    text-align: center;
+  }
+}
+.footer-navbar ul {
+  padding-left: 0;
+  list-style: none;
+}
+.footer-navbar ul li {
+  display: inline-block;
+  padding-right: 25px;
+  margin-bottom: 5px;
+}
+.footer-navbar a {
+  color: #000;
+  text-decoration: underline;
+}
+.footer-navbar a:hover {
+  color: #4f5dab;
+}
+.novasite-copyright {
+  padding-top: 30px;
+}
+@media (max-width: 991px) {
+  .novasite-copyright {
+    text-align: center;
+  }
+}
+.novasite-copyright-text {
+  padding-top: 15px;
+}
+@media (max-width: 991px) {
+  .novasite-copyright-text {
+    margin-bottom: 10px;
+    text-align: right;
+  }
+}
+.novasite-copyright-text a {
+  text-decoration: none;
+  color: #333;
+}
+.novasite-copyright-text a:hover {
+  color: #4f5dab;
+}
+@media (max-width: 991px) {
+  .novasite-logo {
+    text-align: left;
+  }
+}

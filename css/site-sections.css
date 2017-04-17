@@ -1,0 +1,39 @@
+.site-sections-bar-background {
+  background: #0D2DCA;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .site-sections-bar-background {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .site-sections-bar {
+    padding-top: 50px;
+  }
+}
+.sections-descr {
+  color: #FFF;
+  text-align: center;
+  font-size: 13px;
+  width: 80px;
+  margin: 0 auto;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  line-height: 12px;
+}
+.sections-pic {
+  text-align: center;
+  padding-top: 12px;
+}
+.sections-item:hover {
+  background: #1029A6;
+}
+.sections-item a {
+  color: #FFF;
+  text-decoration: none;
+}
+.sections-item a:hover {
+  color: #23527c;
+  text-decoration: underline;
+}

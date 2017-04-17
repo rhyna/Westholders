@@ -1,0 +1,162 @@
+.order_call_popup {
+  visibility: hidden;
+  position: fixed;
+  -webkit-transition: -webkit-transform 0.5s ease-out;
+  -o-transition: -o-transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+}
+.order_call_popup.active {
+  visibility: visible;
+  z-index: 11;
+  display: inline-block;
+  width: 300px;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  margin-left: -150px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+@media (max-width: 350px) {
+  .order_call_popup.active {
+    width: 250px;
+    margin-left: -125px;
+  }
+}
+.order_call_popup .title {
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  color: #333333;
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.order_call_popup .input_group {
+  margin: 15px;
+}
+.order_call_popup .input_group label {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+}
+.order_call_popup .input_group input {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.order_call_popup .input_group input:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.order_call_popup .input_group.submit {
+  text-align: center;
+}
+.order_call_popup .input_group.submit input[type=submit] {
+  color: #FFF;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  width: auto;
+}
+.order_call_popup .input_group.submit input[type=submit]:hover,
+.order_call_popup .input_group.submit input[type=submit]:active,
+.order_call_popup .input_group.submit input[type=submit]:focus {
+  background-color: #449d44;
+  border-color: #398439;
+}
+.order_call_popup .closing-cross {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+.order_call_popup .closing-cross:hover .line,
+.order_call_popup .closing-cross:active .line,
+.order_call_popup .closing-cross:focus .line {
+  opacity: 1;
+}
+.order_call_popup .closing-cross .left {
+  left: 10px;
+  top: 0px;
+  width: 1px;
+  height: 15px;
+  background-color: #000;
+  opacity: 0.5;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.order_call_popup .closing-cross .right {
+  left: 10px;
+  top: 0px;
+  width: 1px;
+  height: 15px;
+  background-color: #000;
+  opacity: 0.5;
+  position: absolute;
+  -webkit-transform: rotate(315deg);
+  -moz-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  -o-transform: rotate(315deg);
+  transform: rotate(315deg);
+  cursor: pointer;
+}
+.opacity-substrate {
+  position: fixed;
+  opacity: 0;
+}
+.opacity-substrate.active {
+  position: fixed;
+  z-index: 10;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}

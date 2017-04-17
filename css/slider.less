@@ -1,0 +1,101 @@
+.slider{
+    padding: 20px 0;
+    @media (max-width: 991px) {
+        padding-top: 70px;
+    }
+    
+    .slider_contents{
+    
+        .left-arrow{
+            padding-right: 40px;
+            padding-left: 25px;
+            &:hover{
+                opacity: 0.5
+            }
+        }
+        .slider_pic{
+            background-repeat: no-repeat;
+        -webkit-background-size: cover;
+             -o-background-size: cover;
+                background-size: cover;
+        background-position: center;
+        height: 238px;
+        width: 550px;
+        margin-left: 70px;
+            @media (max-width: 991px) {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+        .request-for-leasing{
+            border-left: 5px solid #0D2DCA;
+            box-shadow: 2px 3px 5px 1px rgba(0,0,0,0.17);
+            position: absolute;
+            top: 50%;
+            margin-top: -39px;
+            right: 90px;
+            @media (max-width: 991px) {
+                top: 100%;
+                margin-top: -78px;
+                right: 0;
+                background-color: #fff;
+                opacity: 0.9;
+                width: 100%;
+            }
+            
+            a{
+                display: block;
+                padding: 15px;
+                &:hover{
+                    text-decoration: none;
+                }
+                
+                .title{
+                    color: #000;
+                    font-size: 12px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+                .text{
+                    color: #838897;
+                    padding-top: 10px;
+                    white-space: nowrap;
+                }
+            }
+        }
+        .right-arrow{
+            padding-left: 40px;
+            padding-right: 25px;
+            &:hover{
+                opacity: 0.5
+            }
+        }
+    }
+}
+
+.fotorama__arr--prev{
+    background-image: url(/image/arr-left.png) !important;
+    width: 15px !important;
+    height: 80px !important;
+    margin-top: -40px !important;
+    margin-left: 20px;
+    opacity: 1 !important;
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 2dppx){
+        background-image: url(/image/arr-left.png) !important;
+        background-size: 100% !important;
+    }
+}
+
+.fotorama__arr--next{
+    background-image: url(/image/arr-right.png) !important;
+    width: 15px !important;
+    height: 80px !important;
+    margin-top: -40px !important;
+    background-position: 0 !important;
+    margin-right: 20px;
+    opacity: 1 !important;
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 2dppx){
+        background-image: url(/image/arr-right.png) !important;
+        background-size: 100% !important;
+    }
+}
