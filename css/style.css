@@ -1,4 +1,21 @@
-@import "http://webfonts.ru/import/osanscondensed.css";
+@font-face {
+  font-family: 'Open Sans Condensed';
+  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url('https://64424.selcdn.ru/webfonts/osanscondensed/300.woff2') format('woff2'), url('https://64424.selcdn.ru/webfonts/osanscondensed/300.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans Condensed';
+  src: local('Open Sans Cond Light Italic'), local('OpenSans-CondensedLightItalic'), url('https://64424.selcdn.ru/webfonts/osanscondensed/300i.woff2') format('woff2'), url('https://64424.selcdn.ru/webfonts/osanscondensed/300i.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Open Sans Condensed';
+  src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url('https://64424.selcdn.ru/webfonts/osanscondensed/700.woff2') format('woff2'), url('https://64424.selcdn.ru/webfonts/osanscondensed/700.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
 header {
   border-bottom: 1px solid rgba(13, 45, 202, 0.37);
   padding-bottom: 28px;
