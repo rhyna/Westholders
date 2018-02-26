@@ -1,2 +1,2 @@
 # Westholders
-Оригинал: west-holders.by
+Original: west-holders.by
